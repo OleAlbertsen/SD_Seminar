@@ -1,0 +1,26 @@
+{
+  "id": "d64de4e2-4a88-4cb2-b93f-7a1adc3d6a2c",
+  "name": "SeminarProject",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "features": "TranslationFile", 
+  "showMyCode": true,
+  "target": "Internal",
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 123456700,
+    "to": 123456799
+  }
+}

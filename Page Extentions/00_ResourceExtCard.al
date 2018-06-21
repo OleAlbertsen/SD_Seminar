@@ -11,9 +11,19 @@ pageextension 123456700 "CSD ResourceCardExt" extends "Resource Card"
         }   
             field("CSD Quantity Per Day"; "CSD Quantity Per Day")
             {
-                
+
             }  
         
+        }
+        addafter("Personal Data")
+        {
+            group(Room)
+            {
+                field("CSD Maximum Participants";"CSD Maximum Participants")
+                {
+                    Visible = ShowMaxField;
+                }
+            }
         }
     }
 
@@ -21,7 +31,13 @@ pageextension 123456700 "CSD ResourceCardExt" extends "Resource Card"
     {
         // Add changes to page actions here
     }
-
+    trigger OnAfterGetRecord();
+    BEGIN
+        ShowMaxField := (Type = TYPE::Machine);
+        CurrPage.Update(false);
+    END;
     var
-        myInt: Integer;
+
+    [InDataSet]
+    ShowMaxField: Boolean;
 }

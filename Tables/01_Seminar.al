@@ -79,3 +79,4 @@ table 123456701 Seminar
             Clustered = true;
         }
     }
+}
